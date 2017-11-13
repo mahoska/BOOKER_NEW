@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Request</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        
+        <?php if(!empty($data)):?>
+          <table border="1" cellspacing="0">
+            <?php foreach($data as $key => $value): ?>
+              <tr>
+                  <td><?=$key?></td>
+                  <td>
+                      <?php if(is_array($value)):?>
+                      <ul>
+                        <?php foreach($value as $vkey => $vvalue): ?>
+                            <li>
+                                <?=$vvalue?>
+                            </li>
+                        <?php endforeach;?>
+                      </ul>
+                      <?php else: ?>
+                        <?=$value?>
+                      <?php endif; ?>
+                  </td>
+              </tr>
+            <?php endforeach;?>
+            </table>
+        <?php endif; ?>
+    </body>
+</html>

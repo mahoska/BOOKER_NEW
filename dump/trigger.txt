@@ -1,0 +1,8 @@
+delimiter //
+CREATE TRIGGER delete_events
+AFTER delete ON userBooker 
+for each row 
+begin
+	delete from eventBooker where start_event >= UNIX_TIMESTAMP(NOW()) and user_id = old.id;
+end
+//

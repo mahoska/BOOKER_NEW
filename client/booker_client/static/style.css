@@ -1,0 +1,41 @@
+.err{
+    background: #F00;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.btn-auth{
+    background: #3231b9;
+    color: #D8EEFA;
+    margin-left: 5px;
+}
+
+.btn-cans{
+    background-color: #66CABF;
+}
+  
+.selected_room{
+    height: 50px;
+    text-align: center;
+    font-size: 17px;
+    text-transform: uppercase ;
+    background: #BCBBEC;
+    color: #1C1C66;
+    line-height: 50px;
+    font-weight: bold;
+}
+
+.err_small{
+    line-height: 15px;
+    text-align: center;
+    width: 100%;
+    background: #F00;
+}
+
+.success{
+    color: #FFF;
+    background: none;
+}
+  
+    
+  

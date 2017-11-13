@@ -1,0 +1,9 @@
+RewriteEngine On
+#courses
+RewriteBase /~user15/BOOKER/server/api/sbooker/
+
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^.*$ index.php
+
